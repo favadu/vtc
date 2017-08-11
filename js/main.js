@@ -65,9 +65,9 @@ initialize = function(){
 	if($('#map').length>0){
 	  var latLng = new google.maps.LatLng(47.2172500,-1.5533600); 
 	  var myOptions = {
-		zoom      : 10, // Zoom par défaut
-		center    : latLng, // Coordonnées de départ de la carte de type latLng 
-		mapTypeId : google.maps.MapTypeId.TERRAIN, // Type de carte, différentes valeurs possible HYBRID, ROADMAP, SATELLITE, TERRAIN
+		zoom      : 10, // Zoom par dÃ©faut
+		center    : latLng, // CoordonnÃ©es de dÃ©part de la carte de type latLng 
+		mapTypeId : google.maps.MapTypeId.TERRAIN, // Type de carte, diffÃ©rentes valeurs possible HYBRID, ROADMAP, SATELLITE, TERRAIN
 		maxZoom   : 30
   };
   
@@ -85,18 +85,18 @@ initialize = function(){
 };
 
 calculate = function(){
-    origin      = document.getElementById('autocomplete').value; // Le point départ
-    destination = document.getElementById('autocomplete_2').value; // Le point d'arrivé
+    origin      = document.getElementById('autocomplete').value; // Le point dÃ©part
+    destination = document.getElementById('autocomplete_2').value; // Le point d'arrivÃ©
     if(origin && destination){
         var request = {
             origin      : origin,
             destination : destination,
             travelMode  : google.maps.DirectionsTravelMode.DRIVING // Mode de conduite
         }
-        var directionsService = new google.maps.DirectionsService(); // Service de calcul d'itinéraire
-        directionsService.route(request, function(response, status){ // Envoie de la requête pour calculer le parcours
+        var directionsService = new google.maps.DirectionsService(); // Service de calcul d'itinÃ©raire
+        directionsService.route(request, function(response, status){ // Envoie de la requÃªte pour calculer le parcours
             if(status == google.maps.DirectionsStatus.OK){
-                direction.setDirections(response); // Trace l'itinéraire sur la carte et les différentes étapes du parcours
+                direction.setDirections(response); // Trace l'itinÃ©raire sur la carte et les diffÃ©rentes Ã©tapes du parcours
             }
         });
     }
@@ -104,8 +104,14 @@ calculate = function(){
 
 $(document).ready(function(){
 	initialize();
-
-
+	$('#date_depart').datetimepicker({
+		locale: 'fr',
+		format: 'DD/MM/YYYY'
+	});
+	$('#time_depart').datetimepicker({
+		locale: 'fr',
+		format: 'LT'
+	});
 });
 
 var tds = document.getElementsByTagName("td");
