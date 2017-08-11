@@ -53,12 +53,18 @@ function getFormData() {
 }
 function initAutocomplete() {
  
-  autocomplete = new google.maps.places.Autocomplete(
+  var autocomplete = new google.maps.places.Autocomplete(
 	  /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
 	  {types: ['geocode','establishment'], componentRestrictions: {country: 'fr'}});
-	autocomplete_2 = new google.maps.places.Autocomplete(
+	var autocomplete_2 = new google.maps.places.Autocomplete(
       /** @type {!HTMLInputElement} */(document.getElementById('autocomplete_2')),
       {types: ['geocode','establishment'], componentRestrictions: {country: 'fr'}});
+  var autocomplete3 = new google.maps.places.Autocomplete(
+	  /** @type {!HTMLInputElement} */(document.getElementById('lieu_depart')),
+	  {types: ['geocode','establishment'], componentRestrictions: {country: 'fr'}});
+var autocomplete4 = new google.maps.places.Autocomplete(
+	  /** @type {!HTMLInputElement} */(document.getElementById('lieu_arrive')),
+	  {types: ['geocode','establishment'], componentRestrictions: {country: 'fr'}});
 }
 
 initialize = function(){
@@ -112,6 +118,7 @@ $(document).ready(function(){
 		locale: 'fr',
 		format: 'LT'
 	});
+
 });
 
 var tds = document.getElementsByTagName("td");
@@ -127,12 +134,17 @@ for(var i=0; i<tds.length; i++){
 
 function handleBookFormSubmit(event) {  // handles form submit withtout any jquery
 	event.preventDefault();
-	$("#lieu_depart").val($("#autocomplete").val());
-	$("#lieu_arrive").val($("#autocomplete_2").val());
-	$("#vehicule").val($("#select-vehicule option:selected").text());
+	setDataBeforeContact();
 	$('#modalContact').modal('toggle');
     return false;
 }
+
+function setDataBeforeContact() {  // handles form submit withtout any jquery
+	$("#lieu_depart").val($("#autocomplete").val());
+	$("#lieu_arrive").val($("#autocomplete_2").val());
+	$("#vehicule").val($("#select-vehicule option:selected").val());
+}
+
 function resetForm() {
 	document.getElementById("gform").reset();
 }
