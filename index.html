@@ -77,7 +77,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header id="main-header">
         <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -102,14 +102,14 @@
 										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzCwAPB_CKjmqM49q5pkO9zui4dHMKLxs&amp;libraries=places&amp;callback=initAutocomplete" defer=""></script>										
 											<form id="book-form" action="">
 												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
-													<input id="autocomplete" placeholder="Votre lieu de départ" type="text" name="depart" class="form-control" autocomplete="off" required>
+													<input id="autocomplete" placeholder="Votre lieu de départ" type="text" name="depart" class="form-control" autocomplete="off" >
 												</div>
 												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
-													<input id="autocomplete_2" placeholder="Votre lieu d&#39;arrivee" type="text" name="arrivee" class="form-control" autocomplete="off" required>
+													<input id="autocomplete_2" placeholder="Votre lieu d&#39;arrivee" type="text" name="arrivee" class="form-control" autocomplete="off" >
 												</div>
 												
 												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
-													<select name="vehicule" class="form-control" id="select-vehicule" required>
+													<select name="select-vehicule" class="form-control" id="select-vehicule">
 														<option value="" selected="" disabled="">Choisissez votre véhicule</option>
 														<option value="berline_4">Berline jusqu'à 4 personnes</option>
 														<option value="van_8">Van jusqu'à 8 personnes</option>
@@ -133,7 +133,7 @@
                     <h2 class="section-heading">Qui sommes nous?</h2>
                     <hr class="light">
                     <p class="text-faded"> Toulouse VTC Privé est une société de transport de personnes VTC (Voiture de Transport avec Chauffeur), basée à Toulouse, nous travaillons uniquement sur réservation.!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Commander!</a>
+                    <a href="#modalContact" class="btn btn-default btn-xl sr-button" data-toggle="modal" onclick=" setDataBeforeContact();">Commander!</a>
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>VOUS SOUHAITEZ FAIRE UNE RÉSERVATION ?</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Résever Maintenant!</a>
+                <a href="#modalContact" class="btn btn-default btn-xl sr-button" data-toggle="modal" onclick=" setDataBeforeContact();">Résever Maintenant!</a>
             </div>
         </div>
     </aside>
@@ -284,19 +284,22 @@
 											<div class="col-md-4">
 												<div class="form-group">
 													<label for="lieu_depart">Votre lieu de départ:</label>
-													<input id="lieu_depart" type="text" name="lieu_depart" class="form-control" placeholder="Votre lieu de départ" autocomplete="off" readonly>
+													<input id="lieu_depart" type="text" name="lieu_depart" class="form-control" autocomplete="off" required>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">    
 													<label for="lieu_arrive">Votre lieu d&#39;arrivee:</label>													
-													<input id="lieu_arrive" type="text" name="lieu_arrive" class="form-control" readonly>
+													<input id="lieu_arrive" type="text" name="lieu_arrive" class="form-control" autocomplete="off" required>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
 													<label for="vehicule">Votre véhicule:</label>
-													<input id="vehicule" type="text" name="vehicule" class="form-control" readonly>
+													<select id="vehicule" name="vehicule" class="form-control">
+														<option value="berline_4">Berline jusqu'à 4 personnes</option>
+														<option value="van_8">Van jusqu'à 8 personnes</option>
+													</select>
 												</div>
 											</div>
 										</div>		
@@ -339,7 +342,7 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<textarea id="message" name="message" class="form-control" placeholder="Message" rows="8"></textarea>
+													<textarea id="message" name="message" class="form-control" placeholder="Message" rows="8" required></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
@@ -382,8 +385,8 @@
                             <hr class="star-primary">
 							<div id="success_message" class="alert alert-success alert-dismissable">
 									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-										<h4><em>Merci</em> de nous réserver!
-										  Je vous contactera pour la confirmation!</h4>
+										<h4><em>Merci</em> d'avoir réservé!
+										  Je vous contacterai pour la confirmation!</h4>
 									  </div>                            	                       
 							</div>
 							<div id="error_message" class="alert alert-danger alert-dismissable">
