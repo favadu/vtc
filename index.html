@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Toulouse VTC Privé</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	
+	<!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+	<link href="css/slider.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css">
+
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/modernizr.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Toulouse VTC Privé</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">En pratique</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Mentions Légales</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="block wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            
+                            <!-- Slider -->
+                            <section class="section-header">
+                                <h1 class="wow fadeInUp  cd-headline slide" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                
+                                <span class="norm">Nous  assurons votre transfert</span><br>
+                                <span class="text_anim">										
+								   <b class="fadeInDown" style="display: block;">Transferts toutes distances 24h/24 et 7j/7</b><b class="" style="display: none;">Berlines ou vans</b></span>
+                                </h1>
+                                </section> <!-- END slider -->
+                                
+                                
+								<h2 class="wow fadeInUp  pad-top-15" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                                    RÉSERVEZ VOTRE CHAUFFEUR EN LIGNE OU AU <strong class="text-big">06.41.25.08.53</strong>
+                                </h2>
+                                 <div class="col-md-12">
+									<div class="row contact-form">
+										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzCwAPB_CKjmqM49q5pkO9zui4dHMKLxs&amp;libraries=places&amp;callback=initAutocomplete" defer=""></script>										
+											<form id="book-form" action="">
+												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
+													<input id="autocomplete" placeholder="Votre lieu de départ" type="text" name="depart" class="form-control" autocomplete="off" required>
+												</div>
+												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
+													<input id="autocomplete_2" placeholder="Votre lieu d&#39;arrivee" type="text" name="arrivee" class="form-control" autocomplete="off" required>
+												</div>
+												
+												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
+													<select name="vehicule" class="form-control" id="select-vehicule" required>
+														<option value="" selected="" disabled="">Choisissez votre véhicule</option>
+														<option value="berline_4">Berline jusqu'à 4 personnes</option>
+														<option value="van_8">Van jusqu'à 8 personnes</option>
+													</select>
+												</div>
+												<div id="submit" class="col-sm-12" >
+													<input type="submit" id="book-submit" class="btn btn-default btn-xl sr-button btn-send margin-bottom-20 margin-top-10 pad-10" value="Réserver"/>
+												</div>
+											</form>
+									</div>
+							</div>  <!-- END row  container -->
+							<!--<div class="col-md-12">
+								<div id="map"></div>
+							</div> -->
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Qui sommes nous?</h2>
+                    <hr class="light">
+                    <p class="text-faded"> Toulouse VTC Privé est une société de transport de personnes VTC (Voiture de Transport avec Chauffeur), basée à Toulouse, nous travaillons uniquement sur réservation.!</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Commander!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A Votre Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>24 HEURES SUR 24 et 7 JOURS SUR 7</h3>
+                        <p class="text-muted">Tous vos déplacements sur réservation jour et nuit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>RAPIDITE ET SECURISE</h3>
+                        <p class="text-muted">Une service super rapidité et sécurisé!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>PROFESSIONNEL ET DE QUALITE</h3>
+                        <p class="text-muted">Un service professionnel à proposer.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>CONDUIRE AVEC L'AMOUR</h3>
+                        <p class="text-muted">Des chauffeurs charmants!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Votre Destination à la carte
+                                </div>
+                                <div class="project-name">
+                                    Nous nous déplaçons sur toute la France.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+									Votre Service Avec Chauffeur
+                                </div>
+                                <div class="project-name">
+                                    Offrez à vos collaborateurs un service avec chauffeur.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Une Tarification Adaptée
+                                </div>
+                                <div class="project-name">
+                                    Une tarification claire, sans surprise et un devis préalable à toute réservation.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>VOUS SOUHAITEZ FAIRE UNE RÉSERVATION ?</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Résever Maintenant!</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Nous Contacter!</h2>
+                    <hr class="primary">
+                    <p>Contactez-nous maintenant!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>06.41.25.08.53</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">vtc-tls@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Contact -->
+    <div class="portfolio-modal modal fade" id="modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Réservez Maintenant!</h2>
+                            <hr class="star-primary">
+                            	<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwDPC6sd1Puxw1ymml5ulBcHegUrMgjM-lg8TO4--kWTodei4GT/exec">
+									<div class="controls">
+										
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<label for="lieu_depart">Votre lieu de départ:</label>
+													<input id="lieu_depart" type="text" name="lieu_depart" class="form-control" placeholder="Votre lieu de départ" autocomplete="off" required>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">    
+													<label for="lieu_arrive">Votre lieu d&#39;arrivee:</label>													
+													<input id="lieu_arrive" type="text" name="lieu_arrive" class="form-control" readonly>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label for="vehicule">Votre véhicule:</label>
+													<input id="vehicule" type="text" name="vehicule" class="form-control" readonly>
+												</div>
+											</div>
+										</div>		
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input id="date_depart" type="text" name="date_depart" class="form-control" placeholder="Votre date de départ *" required>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">    
+													<input id="time_depart" type="text" name="time_depart" class="form-control" placeholder="Votre heure de départ *" required>
+												</div>
+											</div>											
+										</div>										
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input id="tel" type="text" name="tel" class="form-control" placeholder="Votre téléphone *">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">    
+													<input id="email" type="email" name="email" class="form-control" placeholder="Votre Email *" required>
+													<span id="email-invalid" style="display:none">Ce doit être une adresse courriel valide</span>
+												</div>
+											</div>											
+										</div>
+										<div class="row">											
+											<div class="col-md-6">
+												<div class="form-group">
+													<input id="name" type="text" name="name" class="form-control" placeholder="Votre nom">
+												</div>
+											</div>
+											<div class="col-md-6">
+												&nbsp;
+											</div>											
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea id="message" name="message" class="form-control" placeholder="Message *" rows="8" required></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												&nbsp;
+											</div>
+											<div class="col-md-12">
+												<button type="submit" class="btn btn-success"><i class="fa fa-paper-plane"></i> Envoyer</button>
+												<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+											</div>
+										</div>
+										<div class="row">
+											&nbsp;
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<p class="text-muted"><strong>*</strong> Ces champs sont obligatoires.</p>
+											</div>
+										</div>
+									</div>
+								</form>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Réservez Maintenant!</h2>
+                            <hr class="star-primary">
+							<div id="success_message" class="alert alert-success alert-dismissable">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+										<h4><em>Merci</em> de nous réserver!
+										  Je vous contactera pour la confirmation!</h4>
+									  </div>                            	                       
+							</div>
+							<div id="error_message" class="alert alert-danger alert-dismissable">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+										<h4>Un probleme technique est survenu!</h4>
+									  </div>                            	                       
+							</div>
+							<div class="col-md-12">
+								<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+							</div>
+							<div class="col-md-12">
+								&nbsp;
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/moment-with-locales.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	
+	<!-- Theme JavaScript -->
+    <script src="js/main.js"></script>
+	
+	<!-- Cookie Banner -->
+	<script src="js/bootstrap-cookie-consent.js"></script>
+	<script type="text/javascript">
+															$(function () {
+																$('#date_depart').datetimepicker({
+																	locale: 'fr',
+																	format: 'DD/MM/YYYY'
+																});
+																$('#time_depart').datetimepicker({
+																	locale: 'fr',
+																	format: 'LT'
+																});
+																
+															});
+														</script>
+
+</body>
+
+</html>
