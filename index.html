@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Private Express, Chauffeur privé, VTC privé, Nantes, La Loire Atlantique, Taxi Privé">
     <meta name="author" content="">
 
-    <title>Toulouse VTC Privé</title>
-
+    <title>Civitas Express - VTC : Réservez un Chauffeur Privé VTC à Nantes Prix Fixe</title>
+	
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -52,7 +52,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Toulouse VTC Privé</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Private Express - 07.89.41.65.48</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,11 +64,14 @@
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Mentions Légales</a>
+					<li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#modalMentionLegale" data-toggle="modal" >Mentions Légales</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="https://facebook.com"><i class="fa fa-facebook-official fa-2x"></i></a>
                     </li>
                 </ul>
             </div>
@@ -87,19 +90,23 @@
                             <section class="section-header">
                                 <h1 class="wow fadeInUp  cd-headline slide" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                                 
-                                <span class="norm">Nous  assurons votre transfert</span><br>
-                                <span class="text_anim">										
-								   <b class="fadeInDown" style="display: block;">Transferts toutes distances 24h/24 et 7j/7</b><b class="" style="display: none;">Berlines ou vans</b></span>
+                                <span class="norm">Nous proposons votre transfert de luxe</span><br>
+                                <span class="text_anim hidden-sm hidden-xs">										
+								   <b class="fadeInDown" style="display: block;">Transferts toutes distances 24h/24</b>
+								   <b class="" style="display: none;">Mercedes classe E ou Porsche Panamera</b></span>
                                 </h1>
                                 </section> <!-- END slider -->
                                 
                                 
-								<h2 class="wow fadeInUp  pad-top-15" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                                    RÉSERVEZ VOTRE CHAUFFEUR EN LIGNE OU AU <strong class="text-big">06.05.04.03.02</strong>
-                                </h2>
-                                 <div class="col-md-12">
+								
+                                 <div class="col-md-12 group-text">
+									<div class="row">
+										<h2 class="wow fadeInUp  pad-top-15" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+											RÉSERVEZ VOTRE CHAUFFEUR EN LIGNE OU AU <strong class="text-big">07.89.41.65.48</strong>
+										</h2>
+									</div>
 									<div class="row contact-form">
-										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzCwAPB_CKjmqM49q5pkO9zui4dHMKLxs&amp;libraries=places&amp;callback=initAutocomplete" defer=""></script>										
+										<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBwU-L_HNyAI-AtDrN6JMoTE1f-W-1NhC4&amp;libraries=places&amp;callback=initAutocomplete" defer=""></script>										
 											<form id="book-form" action="">
 												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
 													<input id="autocomplete" placeholder="Votre lieu de départ" type="text" name="depart" class="form-control" autocomplete="off" autofocus >
@@ -110,9 +117,10 @@
 												
 												<div class="form-group wow fadeInDown col-sm-4" data-wow-duration="500ms" data-wow-delay=".6s" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.6s; animation-name: fadeInDown;">
 													<select name="select-vehicule" class="form-control" id="select-vehicule">
-														<option value="" selected="" disabled="">Choisissez votre véhicule</option>
-														<option value="berline_4">Berline jusqu'à 4 personnes</option>
-														<option value="van_8">Van jusqu'à 8 personnes</option>
+														<option value="" selected="" disabled="">Choisissez le service</option>
+														<option value="chaufeur">Mise à disposition avec chauffeur</option>
+														<option value="mariage">Service pour les mariages</option>
+														<option value="Longue distance">Les courses longues distances</option>
 													</select>
 												</div>
 												<div id="submit" class="col-sm-12" >
@@ -129,11 +137,41 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2 class="section-heading">Qui sommes nous?</h2>
                     <hr class="light">
-                    <p class="text-faded"> Toulouse VTC Privé est une société de transport de personnes VTC (Voiture de Transport avec Chauffeur), basée à Toulouse, nous travaillons uniquement sur réservation.!</p>
-                    <a href="#modalContact" class="btn btn-default btn-xl sr-button" data-toggle="modal" onclick=" setDataBeforeContact();">Commander!</a>
+                    <p class="text-faded">CIVITAS EXPRESS est une société de transport de personnes VTC (Voiture de Transport avec Chauffeur), basée à Nantes située dans La Loire Atlantique - Département 44, nous travaillons uniquement sur réservation.!</p>
+                    <h2 class="section-heading">Nous proposons:</h2>
+					<hr class="light">
+					<ul class="text-faded text-left">
+						<li>
+							Service et mise à disposition avec chauffeur ( mercedes classe E ou porsche panamera)
+						</li>
+						<li>
+							Service pour les mariages ( mercedes classe E ou porsche panamera)
+						</li>
+						<li>
+							Pour les courses longues distances, merci de nous contacter directement par mail ou téléphone.
+						</li>
+					</ul>
+					<h2 class="section-heading">Un Tarif Fixe sans Surprise</h2>
+					<hr class="light">
+					<p class="text-faded">Vous pouvez trouver quelques exemple de tariff pour des villes de la région:</p>
+					<ul class="text-faded text-left">
+						<li>
+							Nantes - Cholet : 95 euros le jour et 125 la nuit
+						</li>
+						<li>
+							Nantes - la roche sur yon : 100 euros le jour et 130 la nuit
+						</li>
+						<li>
+							Nantes- Angers : 140 le jour et 170 la nuit
+						</li>
+						<li>
+							Nantes la Baule : 120 euros le jour et 150 la nuit
+						</li>
+					</ul>
+					<a href="#modalContact" class="btn btn-default btn-xl sr-button" data-toggle="modal" onclick=" setDataBeforeContact();">Commander!</a>
                 </div>
             </div>
         </div>
@@ -174,7 +212,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>CONDUIRE AVEC L'AMOUR</h3>
+                        <h3>CHAUFFEURS COURTOIS</h3>
                         <p class="text-muted">Des chauffeurs charmants!</p>
                     </div>
                 </div>
@@ -186,8 +224,8 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                    <a href="img/portfolio/fullsize/8.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/8.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -201,8 +239,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                    <a href="img/portfolio/fullsize/7.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/7.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -216,8 +254,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                    <a href="img/portfolio/fullsize/9.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/9.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -250,13 +288,19 @@
                     <hr class="primary">
                     <p>Contactez-nous maintenant!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+                <div class="col-lg-4 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>06.05.04.03.02</p>
+                    <a href="tel:0789416548"><p>07.89.41.65.48</p></a>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">vtc-tls@gmail.com</a></p>
+                    <p><a href="mailto: urban.xpress44@gmail.com">urban.xpress44@gmail.com</a></p>
+                </div>
+				<div class="col-lg-4 text-center">
+                    <i class="fa fa-facebook-official fa-3x sr-contact"></i>
+					<a href=https://facebook.com">						
+						<p>/urban-express</p>
+					</a>
                 </div>
             </div>
         </div>
@@ -275,9 +319,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="modal-body">
-                            <h2>Réservez Maintenant!</h2>
+                            <h2>Réservez Maintenant! </h2>
+							<h3><strong>Tel: 07.89.41.65.48</strong></h3>
+							<p>Merci de nous completer cette formulaire et nous envoyer. Nous vous contacterons pour la confirmation!</p>
                             <hr class="star-primary">
-                            	<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwDPC6sd1Puxw1ymml5ulBcHegUrMgjM-lg8TO4--kWTodei4GT/exec">
+                            	<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxR8IC2-5-FCVH5pw_O6eJoaK-vEI9OrrJjz97VTHdCXy8ki0w/exec">
 									<div class="controls">
 										
 										<div class="row">
@@ -295,10 +341,12 @@
 											</div>
 											<div class="col-md-4">
 												<div class="form-group">
-													<label for="vehicule">Votre véhicule:</label>
-													<select id="vehicule" name="vehicule" class="form-control">
-														<option value="berline_4">Berline jusqu'à 4 personnes</option>
-														<option value="van_8">Van jusqu'à 8 personnes</option>
+													<label for="vehicule">Votre service:</label>
+													<select id="vehicule" name="vehicule" class="form-control" required>
+														<option value="" selected="" disabled="">Choisissez le service</option>
+														<option value="chaufeur">Mise à disposition avec chauffeur</option>
+														<option value="mariage">Service pour les mariages</option>
+														<option value="Longue distance">Les courses longues distances</option>
 													</select>
 												</div>
 											</div>
@@ -342,7 +390,7 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
-													<textarea id="message" name="message" class="form-control" placeholder="Message" rows="8" required></textarea>
+													<textarea id="message" name="message" class="form-control" placeholder="Message" rows="8"></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
@@ -386,13 +434,65 @@
 							<div id="success_message" class="alert alert-success alert-dismissable">
 									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 										<h4><em>Merci</em> d'avoir réservé!
-										  Je vous contacterai pour la confirmation!</h4>
+										  Nous vous contacterons pour la confirmation!</h4>
 									  </div>                            	                       
 							</div>
 							<div id="error_message" class="alert alert-danger alert-dismissable">
 									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 										<h4>Un probleme technique est survenu!</h4>
 									  </div>                            	                       
+							</div>
+							<div class="col-md-12">
+								<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
+							</div>
+							<div class="col-md-12">
+								&nbsp;
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="modalMentionLegale" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Mentions Légales!</h2>
+                            <hr class="star-primary">
+							<div class="col-md-12">
+								<div class="row">
+									<p><strong>Le présent site Internet est édité par la société CIVITAS EXPRESS.</strong></p>
+									<p>CIVITAS EXPRESS est une société spécialisée dans le secteur d'activité des transports de voyageurs par taxis.</p>
+									<ul>
+										<li>CIVITAS EXPRESS</li>
+										<li>Adresse (INSEE) : 3 Allée Alain Gerbault 44200 Nantes</li>
+										<li>SIRET : 532460698 RCS Nantes , APE 4932Z</li>
+										<li>Tel : 07 89 41 65 48</li>
+										<li>Email: urban.xpress44@gmail.com</li>
+									</ul>
+									<p><strong>Données personnelles :</strong></p>
+									<p>Conformément à la loi Informatique et Libertés du 6 janvier 1978  modifiée par la loi du 6 août 2004 relative à la protection des personnes  physiques à l'égard des traitements des données à caractère personnel, tout  utilisateur du site dispose, à tout moment, d'un droit d'accès, de  modification, de rectification ou de suppression des données qui le concernent.</p>
+									   <p>Pour cela, l’utilisateur pourra consulter et modifier ces données via le site www.private-express.fr directement ou devra faire sa demande soit par voie  électronique à l'adresse suivante :
+										urban.xpress44@gmail.com ou par voie  postale à l'adresse suivante 3 Allée Alain Gerbault 44200 Nantes - France.
+									</p>
+									<p class="">&nbsp;</p>
+									<p class=""><strong>Cookies :</strong></p>
+									<p class="">Le site Internet www.private-express.fr peut collecter des informations de manière automatique par l'utilisation de « cookies » (ou témoins de connexion) qui permettent de suivre votre navigation sur le site. </p>
+									<p class="">Un cookie ne permet pas à la société CIVITAS EXPRESS de vous identifier ; en revanche, il enregistre des informations relatives à la navigation de votre ordinateur sur le site www.private-express.fr afin d'établir les paramètres de la session durant votre connexion. </p>
+									<p class="">Ces cookies permettent au site www.private-express.fr de traiter vos demandes et d'assurer le bon fonctionnement du site Internet. </p>
+									<p class="">Le site www.private-express.fr utilise notamment les cookies pour mémoriser vos coordonnées lors de votre identification afin que vous n'ayez plus à les fournir par la suite (cette mémorisation est optionnelle et vous restez libre de modifier vos coordonnées ultérieurement). </p>
+									<p class="">Vous avez toujours la possibilité de désactiver ou d'empêcher le placement de ces cookies ou d'être informé de leur création en configurant votre navigateur à travers un menu 
+« options Internet », « préférences » ou « sécurité ».</p>
+									<p class="">La société CIVITAS EXPRESS vous invite à consulter la rubrique « aide » de votre navigateur Internet pour en savoir plus sur la façon de paramétrer ces fonctions.</p>
+								</div>
 							</div>
 							<div class="col-md-12">
 								<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
