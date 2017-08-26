@@ -9,3 +9,7 @@
 .pac-container {
   z-index: 1051 !important;
 }
+.group-text {
+	background: rgba(0, 0, 0, 0.4);
+    padding: 20px 20px;
+}
