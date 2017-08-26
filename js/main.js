@@ -188,3 +188,18 @@ function loaded() {
 };
 
 document.addEventListener('DOMContentLoaded', loaded, false);
+
+var class_additionnel="fadeInDown animated";
+var _timer=4000;
+
+var change_text=(function(){
+	$('.text_anim>*:first-Child').css({'display':'none'}).attr('class','');
+	$('.text_anim').append($('.text_anim>*:first-Child'));
+$('.text_anim>*:first-Child').css({'display':'block'}).attr('class',class_additionnel);
+	setTimeout(change_text,_timer);
+});
+$(document).ready(function(){
+	$('.text_anim>*').each(function(){$(this).css({'display':'none'}).attr('class','');});
+	$('.text_anim>*:first-Child').css({'display':'block'}).attr('class',class_additionnel);
+	change_text();
+});
