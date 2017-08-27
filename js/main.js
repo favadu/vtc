@@ -202,4 +202,14 @@ $(document).ready(function(){
 	$('.text_anim>*').each(function(){$(this).css({'display':'none'}).attr('class','');});
 	$('.text_anim>*:first-Child').css({'display':'block'}).attr('class',class_additionnel);
 	change_text();
+	$(window).scroll(function () {
+		var e = $(this).scrollTop();
+		if (e > 100) {
+			$('#logo1').hide();
+			$('#logo2').show();
+		} else {
+			$('#logo2').hide();
+			$('#logo1').show();
+		}
+	});
 });
